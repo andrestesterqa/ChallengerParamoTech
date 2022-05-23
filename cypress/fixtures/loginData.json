@@ -1,0 +1,8 @@
+{
+    "validUser": "andytestqa@mail.com",
+    "validPass": "Ab123456",
+    "nickName": "AndyTestQA",
+    "invalidUser": "dummytest@gmail.com",
+    "invalidPass": "dummytest",
+    "invalidNickname": "DummyTest"
+}
