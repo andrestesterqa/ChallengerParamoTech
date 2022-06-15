@@ -1,3 +1,5 @@
+import LoginPage from '../PageObjects/loginPage';
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -24,6 +26,14 @@ Cypress.Commands.add("authenticateWithReCaptcha", () => {
             cy.window().invoke("submitForm");
         }
     });
+});
+
+Cypress.Commands.add("LoginSession", () => {
+    const loginPage = new LoginPage();
+    loginPage.UserInput().type("andytestqa@mail.com");
+    loginPage.passwordInput().type("Ab123456");
+    loginPage.submitButton();
+
 });
 //
 //

@@ -1,6 +1,0 @@
-{
-    "baseUrl": "https://demo.casino/",
-    "pageLoadTimeout": 25000,
-    "chromeWebSecurity": false
-
-}
