@@ -36,7 +36,7 @@ describe('Login Page', () => {
         homePage.signInHeader();
         // Steps to complete the login with user and password invalid
         loginPage.UserInput().type("invalidUser");
-        loginPage.passwordInput().type("invalidPass");
+        loginPage.passwordInput().type("invalidPa");
         loginPage.submitButton();
         // Assertion
         cy.get('[data-test="error-username"]').should('contain', 'Incorrect login, email, phone number or password.');
