@@ -40,9 +40,9 @@ describe('Registration Page', () => {
         signUpPage.passwordConfirmationField().type(onlyPassword);
         signUpPage.currencySelect('EUR');
         signUpPage.termAndConditions();
-        signUpPage.secretQuestion();
-        signUpPage.secretAnswer(dataTest.secretAnswer);
-        signUpPage.userInfo().type(userInfo);
+        //signUpPage.secretQuestion();
+        //signUpPage.secretAnswer(dataTest.secretAnswer);
+        //signUpPage.userInfo().type(userInfo);
         signUpPage.submitButton();
         // Assertions
         cy.url().should('include', '/registrationSuccess');

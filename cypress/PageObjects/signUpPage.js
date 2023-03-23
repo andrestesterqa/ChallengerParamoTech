@@ -13,7 +13,7 @@ class SignUpPage {
     }
     currencySelect(currency) {
         return cy.get("span[class='label']").contains('USD').click().then(() => {
-            cy.get("div[class='form__input form__input--select select    ']:nth-child(3) ul li").contains(currency).click();
+            cy.get("ul li").contains(currency).click();
         });
     }
     termAndConditions() {
