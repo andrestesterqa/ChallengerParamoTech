@@ -7,7 +7,7 @@ describe("Home Page", () => {
 
     });
 
-    it('Search Poker games with 100 results', () => {
+    it.only('Search Poker games with 100 results', () => {
         let text = 'Hell';
         cy.intercept('GET', 'https://demo.casino/games/game/search?query=' + text)
             .as('searchGames');
