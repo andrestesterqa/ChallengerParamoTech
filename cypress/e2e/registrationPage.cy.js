@@ -9,7 +9,7 @@ const randomEmail = faker.internet.email();
 const password = faker.random.alphaNumeric(8);
 const userName = faker.random.word();
 
-describe('Registration Page', () => {
+describe.only('Registration Page', () => {
     let dataTest;
     beforeEach(() => {
         cy.visit('/');

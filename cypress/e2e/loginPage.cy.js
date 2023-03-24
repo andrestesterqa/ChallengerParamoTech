@@ -17,7 +17,7 @@ describe('Login Page', () => {
 
     });
 
-    it.only('Login with valid data', () => {
+    it('Login with valid data', () => {
         // Instance of Home and Login Page
         const homePage = new HomePage();
         // Enter Sign In section from header
